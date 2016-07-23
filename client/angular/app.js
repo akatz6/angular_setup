@@ -4,11 +4,10 @@ $routeProvider
 	 .when('/',{
 		templateUrl: 'angular/partials/login.html'
 	 })
-	// .when('/logged_in',{
-	// 	templateUrl: 'partials/show.html'
-
-	// })
-	// .otherwise({
-	// 	templateUrl: 'partials/landing_page.html'
-	// })
+	.when('/logged_in',{
+		templateUrl: 'angular/partials/welcome.html'
+	})
+	.otherwise({
+		templateUrl: 'angular/partials/login.html'
+	})
 });

@@ -5,6 +5,7 @@ var bodyParser = require('body-parser')
 var session = require('express-session')
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'client')))
+var session = require('express-session')
 app.use(session({
 	secret: 'grumpy cat',
 	resave: false,
